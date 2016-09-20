@@ -1,0 +1,31 @@
+\mode<presentation>
+
+% Requirement
+\RequirePackage{tikz}
+
+% Settings
+\useinnertheme{craiguos}
+\useoutertheme{craiguos}
+\usecolortheme{craiguos}
+
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{blocks}[rounded][shadow=true]  
+
+
+\setbeamertemplate{block begin}
+{
+	\setbeamercolor{item}{parent=block body}
+	\par\vskip\medskipamount%
+	\begin{beamercolorbox}[sep=.5ex,dp=0.6ex,leftskip=0.5ex,rightskip=0.5ex]{block title}
+		\usebeamerfont*{block title}\insertblocktitle%
+	\end{beamercolorbox}%
+	{\parskip0pt\par}%
+	{\nointerlineskip\vskip-0.5pt}%
+	\usebeamerfont{block body}%
+	\begin{beamercolorbox}[sep=.5ex,dp=0.6ex,leftskip=0.5ex,rightskip=0.5ex,vmode]{block body}%
+	
+	\setbeamertemplate{block end}
+	{\end{beamercolorbox}\vskip\smallskipamount}
+}
+
+\mode<all>

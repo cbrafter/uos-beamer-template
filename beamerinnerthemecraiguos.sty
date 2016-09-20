@@ -1,0 +1,36 @@
+\mode<presentation>
+
+% BULLETS & LISTS
+\setbeamertemplate{itemize item}{$\bullet$}
+\setbeamertemplate{itemize subitem}{$\circ$}
+\setbeamertemplate{itemize subsubitem}{\---}
+\setbeamertemplate{bibliography item}{\insertbiblabel}
+
+\setbeamertemplate{section in toc}{%
+	\usebeamercolor[uosblue]{item}%
+	\inserttocsectionnumber.%
+	\usebeamercolor[black]{structure}%
+	\kern1.25ex\inserttocsection\par
+	}
+
+\setbeamertemplate{subsection in toc}{%
+	\hspace\leftmargini
+	\usebeamercolor[uosblue]{item}%
+	\inserttocsectionnumber.\inserttocsubsectionnumber%
+	\usebeamercolor[black]{structure}%
+	\kern1.25ex\inserttocsubsection\par
+	}
+
+\setbeamertemplate{subsubsection in toc}{%
+	\hspace\leftmargini
+	\hspace\leftmarginii
+	\usebeamercolor[uosblue]{item}%
+	\inserttocsectionnumber.\inserttocsubsectionnumber.%
+	\inserttocsubsubsectionnumber%
+	\usebeamercolor[black]{structure}%
+	\kern1.25ex\inserttocsubsubsection\par
+	}
+
+
+
+\mode<all>

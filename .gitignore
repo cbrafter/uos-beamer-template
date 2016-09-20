@@ -1,0 +1,15 @@
+.DS_Store
+~$*
+*~
+*.pyc
+*.aux
+*.log
+*.out
+*.synctex.gz
+*.bbl
+*.blg
+*.zip
+*.tar.*
+*.snm
+*.nav
+*.toc
