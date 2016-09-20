@@ -1,0 +1,63 @@
+\documentclass{beamer}
+\usetheme{craiguos}
+\usepackage[utf8]{inputenc}
+\usepackage[main=english]{babel}        
+
+%% These macros specify information about the presentation
+\title{Main Title}
+\subtitle{Subtitle}
+\date{\today}
+\author{Craig B. Rafter}
+\institute{Transportation Research Group}
+\titlegraphic{\hfill\includegraphics[height=1.0cm]{uos-logo-white.png}}
+
+%% These additional packages are used within the document:
+\usepackage{ragged2e}  % `\justifying` text
+\usepackage{booktabs}  % Tables
+\usepackage{tabularx}
+\usepackage{tikz}      % Diagrams
+\usetikzlibrary{calc, shapes, backgrounds}
+\usepackage{amsmath, amssymb}
+\usepackage{url}       % `\url`s
+\usepackage{listings}  % Code listings
+\usepackage{color}
+
+\frenchspacing
+\begin{document}
+	\setbeamercolor{background canvas}{bg=uosblue}
+	\begin{frame}[plain]
+		\titlepage
+	\end{frame}
+	\setbeamercolor{background canvas}{bg=}
+	
+	  \AtBeginSection[]{% Print an outline at the beginning of sections
+	  	\begin{frame}<beamer>
+	  		\frametitle{Outline for Section \thesection}
+	  		\tableofcontents[currentsection]
+	  	\end{frame}
+	  }	
+	
+	\section{First}
+	\begin{frame} 
+		\frametitle{There Is No Largest Prime Number} 
+		\framesubtitle{The proof uses \textit{reductio ad absurdum}.} 
+		\begin{theorem}
+			There is no largest prime number. \end{theorem} 
+		\begin{enumerate} 
+			\item<1-| alert@1> Suppose $p$ were the largest prime number. 
+			\item<2-> Let $q$ be the product of the first $p$ numbers. 
+			\item<3-> Then $q+1$ is not divisible by any of them. 
+			\item<1-> But $q + 1$ is greater than $1$, thus divisible by some prime
+			number not in the first $p$ numbers.
+		\end{enumerate}
+	\end{frame}
+	
+	\section{Second}
+	\begin{frame}{A longer title}
+		\begin{itemize}
+			\item one
+			\item two
+		\end{itemize}
+	\end{frame}
+	
+\end{document}
